@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ya Zawjati</title>
+    <link rel="stylesheet" href="css/valentine.css" />
+  </head>
+  <body>
+    <div id="valentineQuestion"><b>HEY SERINEEEE will you be my valentine?</b>
+      <img src="cat.gif" alt="cat asking question" class="responsive" /></div>
+    
+    <button class="answerButton" onclick="location.href='thankyou.html'">
+      Yes
+    </button>
+    <button class="answerButton" id="noButton">I no wanna :(</button>
+    <br />
+   
+    <audio autoplay loop id="audio">
+      <source src="./3stars.mp3" type="audio" />
+      Your browser does not support the audio element.
+    </audio>
+    
+    <style>
+      #audio {
+        display: none;
+      }
+    </style>
+    
+    <script>
+      document
+        .getElementById("noButton")
+        .addEventListener("click", function () {
+          var yesButton = document.querySelector(
+            'button[onclick*="thankyou.html"]'
+          );
+          var currentFontSize = parseInt(
+            window.getComputedStyle(yesButton).fontSize
+          );
+          yesButton.style.fontSize = currentFontSize + 10 + "px"; 
+        });
+    </script>
+  </body>
+</html>
