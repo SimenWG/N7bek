@@ -365,3 +365,44 @@ body{
         transform:translate(-36vmin,1.1vmin) rotateY(-80deg) rotateX(35deg);
     }
 }
+
+@media only screen and (max-width: 430px) {
+    body {
+        flex-direction: column; /* Ensure layout adapts well */
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 14px; /* Adjust text size */
+    }
+
+    #thankyou {
+        font-size: 40px; /* Adjust for readability */
+        margin-bottom: 20px; /* Reduce spacing */
+        margin-top: 15px; /* Adjust top margin */
+    }
+
+    .flower__glass {
+        width: 15vmin;
+        height: 25vmin; /* Scale down flower glass size */
+    }
+
+    .flower__line {
+        width: 1.5vmin; /* Adjust stem width */
+        height: 40vmin; /* Adjust stem height */
+    }
+
+    .flower__leaf {
+        width: 4vmin;
+        height: 10vmin; /* Scale down leaf size */
+    }
+
+    .flower__leaf--1 {
+        width: 7vmin;
+        height: 9vmin;
+        bottom: 2vmin;
+    }
+
+    .button {
+        padding: 8px 16px; /* Adjust button size */
+        font-size: 16px;
+    }
+}
